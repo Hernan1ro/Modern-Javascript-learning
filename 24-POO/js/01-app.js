@@ -1,3 +1,5 @@
+// Creación de clases, instanciación, metodos estaticos y metodos de clases
+
 class Cliente {
   constructor(nombre, saldo) {
     this.nombre = nombre;
