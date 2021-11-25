@@ -1,5 +1,5 @@
-import {
-  nombreCliente,
+import expFunction, {
+  nombreCliente as clienteNombre,
   ahorro,
   mostrarInformacio,
   tieneSaldo,
@@ -7,12 +7,12 @@ import {
 } from "./cliente.js";
 import { Empresa } from "./empresa.js";
 
-console.log(nombreCliente, ahorro);
+console.log(clienteNombre, ahorro);
 
-console.log(mostrarInformacio(nombreCliente, ahorro));
+console.log(mostrarInformacio(clienteNombre, ahorro));
 tieneSaldo(ahorro);
 
-const cliente = new Cliente(nombreCliente, ahorro);
+const cliente = new Cliente(clienteNombre, ahorro);
 console.log(cliente);
 console.log(cliente.mostrarInformacio());
 
@@ -21,3 +21,5 @@ const empresa = new Empresa("Hernan", 100, "Webdevelopment");
 
 console.log(empresa);
 console.log(empresa.mostrarInformacio());
+
+expFunction();
