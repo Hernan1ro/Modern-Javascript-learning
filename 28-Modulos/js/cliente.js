@@ -7,3 +7,14 @@
 
 export const nombreCliente = "Hernan";
 export const ahorro = 200;
+
+export function mostrarInformacio(nombre, ahorro) {
+  return `Cliente: ${nombre} - Ahorro: ${ahorro}`;
+}
+export function tieneSaldo(ahorro) {
+  if (ahorro > 0) {
+    console.log("Si tiene saldo");
+  } else {
+    console.log("No tiene saldo, trabaje vago");
+  }
+}
