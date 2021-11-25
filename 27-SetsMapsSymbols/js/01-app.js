@@ -30,6 +30,7 @@ console.log(carrito);
 // Eliminar del arreglo los números repetidos
 const numeros = [1, 2, 3, 4, 5, 1, 2];
 
-const noDuplicados = new Set(numeros);
+// const noDuplicados = new Set(numeros);
+
 // Nuevo array sin duplicados
-console.log(noDuplicados);
+console.table("Sin duplicados: ", noDuplicados);
