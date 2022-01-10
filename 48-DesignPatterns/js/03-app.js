@@ -1,6 +1,6 @@
 // Singleton pattern
 
-// It does not allow to create multiple instances
+// It does not allow to create multiple instances for a single object
 
 let instancia = null;
 class Persona {
