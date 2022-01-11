@@ -9,6 +9,7 @@
   "author": "hernan mercado",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.8",
     "jest": "^27.4.7"
   }
 }
