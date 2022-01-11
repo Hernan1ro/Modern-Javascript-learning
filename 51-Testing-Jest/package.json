@@ -1,0 +1,14 @@
+{
+  "name": "51-testing-jest",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "hernan mercado",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
