@@ -14,4 +14,8 @@ describe("Testing a las funciones suma y resta", () => {
   test("Resta 10 menso 5", () => {
     expect(resta(10, 5)).toBe(5);
   });
+
+  test("Que 10 menos 5 no sea otro valor", () => {
+    expect(resta(10, 5)).not.toBe(2);
+  });
 });
