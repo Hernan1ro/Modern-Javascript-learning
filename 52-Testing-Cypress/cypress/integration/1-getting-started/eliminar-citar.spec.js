@@ -47,5 +47,8 @@ describe("Llena los campos para una nueva cita y la elimina", function () {
     cy.get('[data-cy="citas-heading"]')
       .invoke("text")
       .should("equal", "No hay Citas, comienza creando una");
+
+    // Toma screenshots
+    cy.screenshot();
   });
 });
