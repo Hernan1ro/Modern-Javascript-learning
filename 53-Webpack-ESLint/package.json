@@ -1,5 +1,5 @@
 {
-  "name": "53-Webpack-ESLint",
+  "name": "webpackeslint",
   "version": "1.0.0",
   "description": "",
   "main": ".eslintrc.js",
@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel entrada.js --out-file salida.js --presets=@babel/preset-env",
     "webpack": "webpack --mode=development",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --config webpack.config.js",
+    "start": "webpack  --config webpack.config.js"
   },
   "keywords": [],
   "author": "",

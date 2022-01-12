@@ -8,11 +8,11 @@ module.exports = {
   },
   mode: "development",
   devServer: {
-    static: {
-      directory: path.join(__dirname, "/"),
-    },
+    static: path.join(__dirname, "/"),
     compress: true,
-    port: 9000,
+    historyApiFallback: true,
+    port: 3006,
+    open: true,
   },
   module: {
     rules: [
