@@ -23,6 +23,7 @@
               >
               <div class="col-sm-8 col-lg-8">
                 <input
+                  data-cy="mascota-input"
                   type="text"
                   id="mascota"
                   name="mascota"
@@ -37,6 +38,7 @@
               >
               <div class="col-sm-8 col-lg-8">
                 <input
+                  data-cy="propietario-input"
                   type="text"
                   id="propietario"
                   name="propietario"
@@ -49,6 +51,7 @@
               <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
               <div class="col-sm-8 col-lg-8">
                 <input
+                  data-cy="telefono-input"
                   type="tel"
                   id="telefono"
                   name="telefono"
@@ -61,6 +64,7 @@
               <label class="col-sm-4 col-lg-4 col-form-label">Fecha:</label>
               <div class="col-sm-8 col-lg-8">
                 <input
+                  data-cy="fecha-input"
                   type="date"
                   id="fecha"
                   name="fecha"
@@ -72,7 +76,13 @@
             <div class="form-group row">
               <label class="col-sm-4 col-lg-4 col-form-label">Hora:</label>
               <div class="col-sm-8 col-lg-8">
-                <input type="time" id="hora" name="hora" class="form-control" />
+                <input
+                  data-cy="hora-input"
+                  type="time"
+                  id="hora"
+                  name="hora"
+                  class="form-control"
+                />
               </div>
             </div>
 
@@ -80,6 +90,7 @@
               <label class="col-sm-4 col-lg-4 col-form-label">Sintomas:</label>
               <div class="col-sm-8 col-lg-8">
                 <textarea
+                  data-cy="sintomas-textarea"
                   id="sintomas"
                   name="sintomas"
                   class="form-control"
@@ -87,7 +98,11 @@
               </div>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-success w-100 d-block">
+              <button
+                data-cy="btn-submit"
+                type="submit"
+                class="btn btn-success w-100 d-block"
+              >
                 Crear Cita
               </button>
             </div>

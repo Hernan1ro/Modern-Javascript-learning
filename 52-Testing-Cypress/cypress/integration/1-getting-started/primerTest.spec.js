@@ -1,6 +1,6 @@
 describe("Carga la pagina principal", function () {
   it("Carga la página principal", function () {
-    cy.visit("http://127.0.0.1:5500/index.html");
+    cy.visit("/index.html");
 
     // Verificar el elemento y su texto
     cy.contains(

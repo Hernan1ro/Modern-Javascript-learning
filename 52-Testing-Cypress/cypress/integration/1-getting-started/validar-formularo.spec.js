@@ -2,7 +2,7 @@
 
 describe("Valida el formulario", function () {
   it("submit al formulario y mostrar alerta error", function () {
-    cy.visit("http://127.0.0.1:5500/index.html");
+    cy.visit("/index.html");
 
     cy.get('[data-cy="formulario"]').submit();
 
