@@ -7,6 +7,10 @@ class UI {
   }
 
   imprimirAlerta(mensaje, tipo) {
+    const alertPrevia = document.querySelector(".alert");
+    if (alertPrevia) {
+      alertPrevia.remove();
+    }
     // Crea el div
     const divMensaje = document.createElement("div");
     divMensaje.classList.add("text-center", "alert", "d-block", "col-12");
@@ -78,6 +82,7 @@ class UI {
 
       // Añade un botón de editar...
       const btnEditar = document.createElement("button");
+      btnEditar.dataset.cy = "btn-editar";
       btnEditar.onclick = () => cargarEdicion(cita);
 
       btnEditar.classList.add("btn", "btn-info");

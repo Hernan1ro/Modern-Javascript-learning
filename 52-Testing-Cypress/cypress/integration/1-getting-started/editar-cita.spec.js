@@ -22,4 +22,18 @@ describe("Llena los campos para una nueva cita y la muestra", function () {
 
     cy.get('[data-cy="alerta"]').should("have.class", "alert-success");
   });
+
+  // Editar cita
+  it("Edita la cita", () => {
+    cy.get("[data-cy='btn-editar']").click();
+    cy.get('[data-cy="mascota-input"]').clear().type("Dio brando");
+    cy.get('[data-cy="btn-submit"]').click();
+
+    // Comprobar mensaje de guardado
+    cy.get('[data-cy="alerta"]')
+      .invoke("text")
+      .should("equal", "Guardado Correctamente");
+
+    cy.get('[data-cy="alerta"]').should("have.class", "alert-success");
+  });
 });
